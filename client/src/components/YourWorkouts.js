@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import WorkoutCard from "./Workoutcard";
+import WorkoutCard from "./WorkoutCard";
 
 function YourWorkouts({workouts, handleClick}) {
+
     return (
         <div>
             {

@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import React, {useState} from 'react'
 
 function Auth({setUser}) {
@@ -51,3 +52,29 @@ function Auth({setUser}) {
 }
 
 export default Auth;
+
+const Form = styled.form `
+color: white;
+font-family: Andale Mono, monospace;
+font-size: .5em;
+margin:auto;
+padding:auto;
+width:50%;
+display:flex;
+flex-direction:column;
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+input[type=submit]{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1em;
+    background-color:#34bdeb;
+    color:white;
+}
+`
+const Errors = styled.div `
+color: white;
+`

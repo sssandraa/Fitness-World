@@ -1,4 +1,4 @@
-import WorkoutCard from "./Workoutcard"
+import WorkoutCard from "./WorkoutCard"
 
 function WorkoutsList({workouts, handleClick}) {
   return (

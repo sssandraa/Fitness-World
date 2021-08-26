@@ -1,11 +1,26 @@
 import React, {useEffect, useState} from 'react';
-import WorkoutsList from './WorkoutsList';
-import YourWorkouts from './YourWorkouts';
-import Header from './Header';
-import NavBar from './NavBar';
+
+import WorkoutsList from './components/WorkoutsList';
+import YourWorkouts from './components/YourWorkouts';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
+import Login from './components/Login'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
+  const [user, setUser] = useState(null);
+ 
+  useEffect(() => {
+    // auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+  if (!user) return <Login onLogin={setUser} />;
+
   const [workouts, setWorkouts] = useState([])
   const [myWorkouts, setMyWorkouts] = useState([])
 
@@ -30,10 +45,11 @@ function App() {
         setWorkouts(data);
       });
 }, []);
+
 return(
   
   <div>
-    <NavBar />
+    <NavBar user={user} setUser={setUser}/>
     <Header />
     <Router>
       <Switch>
