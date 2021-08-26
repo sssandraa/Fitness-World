@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import {useHistory} from 'react-router-dom';
+// import {useHistory} from 'react-router-dom';
 // import { Button, Error, Input, FormField, Label } from "./styles";
 
 function LoginForm({ onLogin }) {
@@ -13,7 +13,7 @@ function LoginForm({ onLogin }) {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("/login", {
+    fetch("http://localhost:3000/login", {
       method: "POST",
       headers: {
         "Accept": "application/json",

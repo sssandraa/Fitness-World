@@ -13,10 +13,11 @@ function NavBar({ user, setUser }) {
    
   return (
     <nav>
-    <Router>
+  
       <Link to="/yourworkouts">Your Workouts</Link>
       <Link to="/workoutslist">Workouts </Link>
-    </Router>
+      <Link to="/reviews">Reviews</Link>
+
     </nav>
   );
   }

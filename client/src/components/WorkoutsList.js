@@ -14,3 +14,4 @@ function WorkoutsList({workouts, handleClick}) {
 }
 
 export default WorkoutsList;
+
