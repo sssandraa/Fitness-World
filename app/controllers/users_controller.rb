@@ -1,19 +1,17 @@
 class UsersController < ApplicationController
+    wrap_parameters format: []
+   skip_before_action :authorize, only: [:create]
+    def create  
+    user = User.create(username: user_params)
+    render json:user 
+   end 
 
-    def show 
-        user = User.find(params[:id])
-        render json:user 
-    end 
+   //login route 
 
-    def create
-        user = User.create(user_params)
-        render json:user 
-    end 
+   private 
 
-    private
-
-    def user_params
-        params.require(:user).permit(:name, :image, :height, :weight, :age, :goal)
-    end 
+   def user_params
+    params.permit(:username, :password)
+   end 
 
 end

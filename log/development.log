@@ -628,3 +628,376 @@ Started GET "/favicon.ico" for ::1 at 2021-08-24 18:10:36 -0400
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/reviews" for ::1 at 2021-08-25 10:48:25 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (5.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:5:in `index'
+No serializer found for resource: #<Review id: 1, comment: "Kicked my butt!", rating: 7, user_id: 1, workout_id: 1, created_at: "2021-08-24 20:58:28.791880000 +0000", updated_at: "2021-08-24 20:58:28.791880000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Review::ActiveRecord_Relation (1.8ms)
+Completed 200 OK in 282ms (Views: 257.8ms | ActiveRecord: 158.5ms | Allocations: 6878)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-25 10:48:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/workouts" for ::1 at 2021-08-25 10:48:31 -0400
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (3.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:5:in `index'
+No serializer found for resource: #<Workout id: 1, name: "Booty Buster", description: "Bust your butt for the summer!", image: "https://www.mensjournal.com/wp-content/uploads/mf/...", created_at: "2021-08-24 20:58:28.708413000 +0000", updated_at: "2021-08-24 20:58:28.708413000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Workout::ActiveRecord_Relation (0.73ms)
+Completed 200 OK in 24ms (Views: 11.6ms | ActiveRecord: 3.6ms | Allocations: 5685)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-25 10:48:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/workouts" for ::1 at 2021-08-25 15:09:08 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (3.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.48ms)
+Completed 200 OK in 72ms (Views: 24.1ms | ActiveRecord: 30.2ms | Allocations: 10950)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-25 15:09:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (140.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "react_rails_api_project_template_development"[0m
+  [1m[35m (36.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "react_rails_api_project_template_test"[0m
+  [1m[35m (170.6ms)[0m  [1m[35mCREATE DATABASE "react_rails_api_project_template_development" ENCODING = 'unicode'[0m
+  [1m[35m (68.3ms)[0m  [1m[35mCREATE DATABASE "react_rails_api_project_template_test" ENCODING = 'unicode'[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkouts (20210824194155)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" bigserial primary key, "name" character varying, "description" character varying, "image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210824194155"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReviews (20210824194233)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "comment" character varying, "rating" integer, "user_id" bigint NOT NULL, "workout_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_74a66bd6c5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_28dc75b9d8"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (2.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-25 19:45:09.122197"], ["updated_at", "2021-08-25 19:45:09.122197"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (36.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "react_rails_api_project_template_development"[0m
+  [1m[35m (55.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "react_rails_api_project_template_test"[0m
+  [1m[35m (164.5ms)[0m  [1m[35mCREATE DATABASE "react_rails_api_project_template_development" ENCODING = 'unicode'[0m
+  [1m[35m (72.5ms)[0m  [1m[35mCREATE DATABASE "react_rails_api_project_template_test" ENCODING = 'unicode'[0m
+  [1m[35m (44.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWorkouts (20210824194155)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" bigserial primary key, "name" character varying, "description" character varying, "image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210824194155"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReviews (20210824194233)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "comment" character varying, "rating" integer, "user_id" bigint NOT NULL, "workout_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_74a66bd6c5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_28dc75b9d8"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReviews (20210824194233)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "comment" character varying, "rating" integer, "user_id" bigint NOT NULL, "workout_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_74a66bd6c5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_28dc75b9d8"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReviews (20210824194233)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "comment" character varying, "rating" integer, "user_id" bigint NOT NULL, "workout_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_74a66bd6c5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_28dc75b9d8"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1087325618115650655)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210823194050)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "name" character varying, "image" character varying, "height" integer, "weight" integer, "age" integer, "goal" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210823194050"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReviews (20210824194233)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (101.6ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "comment" character varying, "rating" integer, "user_id" bigint NOT NULL, "workout_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_74a66bd6c5"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_28dc75b9d8"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_user_id" ON "reviews" ("user_id")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_workout_id" ON "reviews" ("workout_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210824194233"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLists (20210824194253)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "lists" ("id" bigserial primary key, "user_id" bigint NOT NULL, "workout_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_d6cf4279f7"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_ec8e02a2ab"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE INDEX "index_lists_on_user_id" ON "lists" ("user_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_lists_on_workout_id" ON "lists" ("workout_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210824194253"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-08-25 20:53:42.710972"], ["updated_at", "2021-08-25 20:53:42.710972"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1087325618115650655)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mList Load (4.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sandra"], ["image", "https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Serious_Buff_Red_Bull_with_Horns_Cartoon_-_Upperbody_657435830_grande.jpg?v=1518308817"], ["height", 72], ["weight", 135], ["age", 24], ["goal", "To become the strongest!"], ["created_at", "2021-08-25 20:56:29.526934"], ["updated_at", "2021-08-25 20:56:29.526934"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Matt"], ["image", "https://jbhnews.com/wp-content/uploads/2019/12/get-ripped-fast-shredded-quickly-1.png"], ["height", 71], ["weight", 190], ["age", 27], ["goal", "To be an animal"], ["created_at", "2021-08-25 20:56:29.530953"], ["updated_at", "2021-08-25 20:56:29.530953"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brittany"], ["image", "https://skinnyms.com/wp-content/uploads/2017/12/7-Insane-HIIT-Leg-Workouts-With-Weights-for-Sleek-Sexy-Legs-750x500.jpg"], ["height", 65], ["weight", 150], ["age", 26], ["goal", "I want to look my best"], ["created_at", "2021-08-25 20:56:29.534181"], ["updated_at", "2021-08-25 20:56:29.534181"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Booty Buster"], ["description", "Bust your butt for the summer!"], ["image", "https://www.mensjournal.com/wp-content/uploads/mf/_main_goblet-squat_1.jpg?quality=86&strip=all"], ["created_at", "2021-08-25 20:56:29.543251"], ["updated_at", "2021-08-25 20:56:29.543251"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ab Annihilation"], ["description", "Destroy your abs!"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMorsTC52ShQ4F_YCaC893nxDl2t6WfFW9jFX5WHenGfxfmBK9TliZqYJj5EaBkVXvdw&usqp=CAU"], ["created_at", "2021-08-25 20:56:29.546770"], ["updated_at", "2021-08-25 20:56:29.546770"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Shoulder Shredder"], ["description", "Boulder shoulders!"], ["image", "https://fitnessvolt.com/wp-content/uploads/2017/01/best-shoulder-exercise.jpg"], ["created_at", "2021-08-25 20:56:29.549717"], ["updated_at", "2021-08-25 20:56:29.549717"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Back Builder"], ["description", "Become a silverback gorilla!"], ["image", "https://www.muscleandfitness.com/wp-content/uploads/2020/07/Mr-Olympia-and-Professional-Bodybuilder-Phil-Heath-Showing-His-Back-Muscles.jpg?quality=86&strip=all"], ["created_at", "2021-08-25 20:56:29.552585"], ["updated_at", "2021-08-25 20:56:29.552585"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Calf Killer"], ["description", "You may not be able to walk tomorrow!"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRATip7PLf4exTuZAVmP_TGACCgGJ1hYSZ2e5GP_-YZtGKmxt0d5UKQA3A4wFlBWwjT-k&usqp=CAU"], ["created_at", "2021-08-25 20:56:29.555949"], ["updated_at", "2021-08-25 20:56:29.555949"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "HIIT Heaven"], ["description", "Insane cardio"], ["image", "https://lmimirror3pvr.azureedge.net/static/media/12419/3ba321af-9388-46d2-91d5-7b86a67b8c45/hiit_960x540-v2.jpg"], ["created_at", "2021-08-25 20:56:29.559086"], ["updated_at", "2021-08-25 20:56:29.559086"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mList Create (4.4ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["workout_id", 1], ["created_at", "2021-08-25 20:56:29.584437"], ["updated_at", "2021-08-25 20:56:29.584437"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mList Create (0.3ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["workout_id", 2], ["created_at", "2021-08-25 20:56:29.594242"], ["updated_at", "2021-08-25 20:56:29.594242"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mList Create (0.3ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["workout_id", 5], ["created_at", "2021-08-25 20:56:29.599666"], ["updated_at", "2021-08-25 20:56:29.599666"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "Kicked my butt!"], ["rating", 7], ["user_id", 1], ["workout_id", 1], ["created_at", "2021-08-25 20:56:29.616852"], ["updated_at", "2021-08-25 20:56:29.616852"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "Too difficult!"], ["rating", 4], ["user_id", 2], ["workout_id", 1], ["created_at", "2021-08-25 20:56:29.623708"], ["updated_at", "2021-08-25 20:56:29.623708"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "What a pump!"], ["rating", 10], ["user_id", 3], ["workout_id", 1], ["created_at", "2021-08-25 20:56:29.630208"], ["updated_at", "2021-08-25 20:56:29.630208"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (6.0ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mList Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mList Destroy (0.2ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mList Destroy (0.1ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.6ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.6ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "gym_rat"], ["password_digest", "1234"], ["name", "Sandra"], ["image", "https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Serious_Buff_Red_Bull_with_Horns_Cartoon_-_Upperbody_657435830_grande.jpg?v=1518308817"], ["height", 72], ["weight", 135], ["age", 24], ["goal", "To become the strongest!"], ["created_at", "2021-08-25 21:02:24.230048"], ["updated_at", "2021-08-25 21:02:24.230048"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "love_the_gym"], ["password_digest", "5678"], ["name", "Matt"], ["image", "https://jbhnews.com/wp-content/uploads/2019/12/get-ripped-fast-shredded-quickly-1.png"], ["height", 71], ["weight", 190], ["age", 27], ["goal", "To be an animal"], ["created_at", "2021-08-25 21:02:24.234265"], ["updated_at", "2021-08-25 21:02:24.234265"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (4.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "summer_body"], ["password_digest", "1111"], ["name", "Brittany"], ["image", "https://skinnyms.com/wp-content/uploads/2017/12/7-Insane-HIIT-Leg-Workouts-With-Weights-for-Sleek-Sexy-Legs-750x500.jpg"], ["height", 65], ["weight", 150], ["age", 26], ["goal", "I want to look my best"], ["created_at", "2021-08-25 21:02:24.237634"], ["updated_at", "2021-08-25 21:02:24.237634"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Booty Buster"], ["description", "Bust your butt for the summer!"], ["image", "https://www.mensjournal.com/wp-content/uploads/mf/_main_goblet-squat_1.jpg?quality=86&strip=all"], ["created_at", "2021-08-25 21:02:24.251744"], ["updated_at", "2021-08-25 21:02:24.251744"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ab Annihilation"], ["description", "Destroy your abs!"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMorsTC52ShQ4F_YCaC893nxDl2t6WfFW9jFX5WHenGfxfmBK9TliZqYJj5EaBkVXvdw&usqp=CAU"], ["created_at", "2021-08-25 21:02:24.255101"], ["updated_at", "2021-08-25 21:02:24.255101"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Shoulder Shredder"], ["description", "Boulder shoulders!"], ["image", "https://fitnessvolt.com/wp-content/uploads/2017/01/best-shoulder-exercise.jpg"], ["created_at", "2021-08-25 21:02:24.258126"], ["updated_at", "2021-08-25 21:02:24.258126"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Back Builder"], ["description", "Become a silverback gorilla!"], ["image", "https://www.muscleandfitness.com/wp-content/uploads/2020/07/Mr-Olympia-and-Professional-Bodybuilder-Phil-Heath-Showing-His-Back-Muscles.jpg?quality=86&strip=all"], ["created_at", "2021-08-25 21:02:24.261231"], ["updated_at", "2021-08-25 21:02:24.261231"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Calf Killer"], ["description", "You may not be able to walk tomorrow!"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRATip7PLf4exTuZAVmP_TGACCgGJ1hYSZ2e5GP_-YZtGKmxt0d5UKQA3A4wFlBWwjT-k&usqp=CAU"], ["created_at", "2021-08-25 21:02:24.265135"], ["updated_at", "2021-08-25 21:02:24.265135"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "HIIT Heaven"], ["description", "Insane cardio"], ["image", "https://lmimirror3pvr.azureedge.net/static/media/12419/3ba321af-9388-46d2-91d5-7b86a67b8c45/hiit_960x540-v2.jpg"], ["created_at", "2021-08-25 21:02:24.268279"], ["updated_at", "2021-08-25 21:02:24.268279"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mList Create (0.5ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["workout_id", 7], ["created_at", "2021-08-25 21:02:24.292389"], ["updated_at", "2021-08-25 21:02:24.292389"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mList Create (0.3ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["workout_id", 8], ["created_at", "2021-08-25 21:02:24.298691"], ["updated_at", "2021-08-25 21:02:24.298691"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mList Create (0.3ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["workout_id", 11], ["created_at", "2021-08-25 21:02:24.304785"], ["updated_at", "2021-08-25 21:02:24.304785"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "Kicked my butt!"], ["rating", 7], ["user_id", 4], ["workout_id", 7], ["created_at", "2021-08-25 21:02:24.321885"], ["updated_at", "2021-08-25 21:02:24.321885"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "Too difficult!"], ["rating", 4], ["user_id", 5], ["workout_id", 7], ["created_at", "2021-08-25 21:02:24.328898"], ["updated_at", "2021-08-25 21:02:24.328898"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mReview Create (0.2ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "What a pump!"], ["rating", 10], ["user_id", 6], ["workout_id", 7], ["created_at", "2021-08-25 21:02:24.334714"], ["updated_at", "2021-08-25 21:02:24.334714"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/workouts" for ::1 at 2021-08-26 00:01:01 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (4.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.47ms)
+Completed 200 OK in 68ms (Views: 23.9ms | ActiveRecord: 25.4ms | Allocations: 10293)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-26 00:01:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2021-08-26 08:40:07 -0400
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sandrawazaz/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sandrawazaz/.rvm/gems/ruby-2.7.4/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 294)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 2279)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-26 08:40:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
