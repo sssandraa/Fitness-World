@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+import {useHistory} from 'react-router-dom';
 // import { Button, Error, Input, FormField, Label } from "./styles";
 
 function LoginForm({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  // const history = useHistory()
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -13,6 +16,7 @@ function LoginForm({ onLogin }) {
     fetch("/login", {
       method: "POST",
       headers: {
+        "Accept": "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ username, password }),
@@ -21,7 +25,7 @@ function LoginForm({ onLogin }) {
       if (r.ok) {
         r.json().then((user) => onLogin(user));
       } else {
-        r.json().then((err) => setErrors(err.errors));
+        r.json().then((err) => setErrors([...errors, err.error]));
       }
     });
   }

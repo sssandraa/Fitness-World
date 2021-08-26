@@ -3,13 +3,13 @@ List.destroy_all
 User.destroy_all
 Workout.destroy_all
 
-user1 = User.create(username: "gym_rat", password_digest: "1234", name: "Sandra", image: "https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Serious_Buff_Red_Bull_with_Horns_Cartoon_-_Upperbody_657435830_grande.jpg?v=1518308817",
+user1 = User.create(username: "gym_rat", password: "1234", name: "Sandra", image: "https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Serious_Buff_Red_Bull_with_Horns_Cartoon_-_Upperbody_657435830_grande.jpg?v=1518308817",
 height: 72, weight: 135, age: 24, goal: "To become the strongest!")
 
-user2 = User.create(username: "love_the_gym", password_digest: "5678", name: "Matt", image: "https://jbhnews.com/wp-content/uploads/2019/12/get-ripped-fast-shredded-quickly-1.png",
+user2 = User.create(username: "love_the_gym", password: "5678", name: "Matt", image: "https://jbhnews.com/wp-content/uploads/2019/12/get-ripped-fast-shredded-quickly-1.png",
 height: 71, weight: 190, age: 27, goal: "To be an animal")
 
-user3 = User.create(username: "summer_body", password_digest: "1111", name: "Brittany", image: "https://skinnyms.com/wp-content/uploads/2017/12/7-Insane-HIIT-Leg-Workouts-With-Weights-for-Sleek-Sexy-Legs-750x500.jpg",
+user3 = User.create(username: "summer_body", password: "1111", name: "Brittany", image: "https://skinnyms.com/wp-content/uploads/2017/12/7-Insane-HIIT-Leg-Workouts-With-Weights-for-Sleek-Sexy-Legs-750x500.jpg",
 height: 65, weight: 150, age: 26, goal: "I want to look my best")
 
 workout1 = Workout.create(name: "Booty Buster", description: "Bust your butt for the summer!", 

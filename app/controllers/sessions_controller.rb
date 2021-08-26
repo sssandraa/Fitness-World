@@ -1,3 +1,4 @@
+require 'pry'
 class SessionsController < ApplicationController
     skip_before_action :authorize, only: [:create]
     
@@ -7,11 +8,12 @@ class SessionsController < ApplicationController
            session[:user_id] = user.id
            render json:user 
         else 
+    
             render json: {error: ['Invalid user and/or password']}
         end 
        end 
 
-       def destory
+       def destroy
         session.delete :user_id 
        end 
 

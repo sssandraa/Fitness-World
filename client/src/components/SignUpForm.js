@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 // import { Button, Error, Input, FormField, Label, Textarea } from "./styles";
 
 function SignUpForm({ onLogin }) {
@@ -10,7 +11,7 @@ function SignUpForm({ onLogin }) {
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  function handlveSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
@@ -24,7 +25,7 @@ function SignUpForm({ onLogin }) {
         password,
         password_confirmation: passwordConfirmation,
         image_url: imageUrl,
-        bio,
+        name,
       }),
     }).then((r) => {
       setIsLoading(false);
@@ -81,9 +82,9 @@ function SignUpForm({ onLogin }) {
         <Label htmlFor="name">Name</Label>
         <Textarea
           rows="3"
-          id="bio"
-          value={bio}
-          onChange={(e) => setBio(e.target.value)}
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
       </FormField>
       <FormField>

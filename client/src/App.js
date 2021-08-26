@@ -9,17 +9,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [user, setUser] = useState(null);
- 
-  useEffect(() => {
-    // auto-login
-    fetch("/me").then((r) => {
-      if (r.ok) {
-        r.json().then((user) => setUser(user));
-      }
-    });
-  }, []);
-
-  if (!user) return <Login onLogin={setUser} />;
 
   const [workouts, setWorkouts] = useState([])
   const [myWorkouts, setMyWorkouts] = useState([])
@@ -46,6 +35,17 @@ function App() {
       });
 }, []);
 
+useEffect(() => {
+  // auto-login
+  fetch("/me").then((r) => {
+    if (r.ok) {
+      r.json().then((user) => setUser(user));
+    }
+  });
+}, []);
+
+if (!user) return <Login onLogin={setUser} />;
+
 return(
   
   <div>
@@ -57,6 +57,7 @@ return(
           () => <YourWorkouts workouts={myWorkouts} handleClick={removeWorkout}/>}/>
       <Route exact path="/workoutslist" component={
           () => <WorkoutsList workouts={workouts} handleClick={selectWorkout} />}/>
+          <Route exact path="/login" component={ () => <Login onLogin={setUser}/> }/>
       </Switch>
     </Router>
   </div>

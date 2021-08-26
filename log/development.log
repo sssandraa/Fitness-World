@@ -1001,3 +1001,1552 @@ Started GET "/favicon.ico" for ::1 at 2021-08-26 08:40:07 -0400
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/workouts" for ::1 at 2021-08-26 15:46:34 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as HTML
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 62ms (Views: 13.1ms | ActiveRecord: 28.0ms | Allocations: 5499)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-26 15:46:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/workouts" for ::1 at 2021-08-26 15:47:57 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:47:57 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 84ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 3464)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 186ms (Views: 0.8ms | ActiveRecord: 61.6ms | Allocations: 3957)
+
+
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:48:26 -0400
+Started GET "/workouts" for ::1 at 2021-08-26 15:48:26 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 49ms (Views: 4.1ms | ActiveRecord: 7.3ms | Allocations: 5883)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 83ms (Views: 1.2ms | ActiveRecord: 22.2ms | Allocations: 5612)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 15:48:37 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:48:37 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 27ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 2134)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 22ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1762)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 15:48:47 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:48:47 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 22ms (Views: 0.9ms | ActiveRecord: 4.5ms | Allocations: 1898)
+
+
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 0.8ms | ActiveRecord: 1.5ms | Allocations: 1686)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 15:50:09 -0400
+Processing by WorkoutsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 29ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 843)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-26 15:50:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/workouts" for ::1 at 2021-08-26 15:53:50 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:53:50 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 16ms (Views: 2.1ms | ActiveRecord: 1.3ms | Allocations: 1500)
+
+
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 35ms (Views: 2.4ms | ActiveRecord: 2.0ms | Allocations: 2100)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 15:55:12 -0400
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"", "password"=>"[FILTERED]", "session"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 200 OK in 43ms (Views: 1.2ms | ActiveRecord: 2.5ms | Allocations: 2559)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 15:55:21 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:55:21 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 85ms (Views: 0.6ms | ActiveRecord: 8.6ms | Allocations: 1633)
+
+
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 83ms (Views: 0.9ms | ActiveRecord: 15.9ms | Allocations: 1737)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 15:55:22 -0400
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"", "password"=>"[FILTERED]", "session"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 616)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 15:55:32 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:55:32 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (22.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 99ms (Views: 2.9ms | ActiveRecord: 1.7ms | Allocations: 2236)
+
+
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 87ms (Views: 0.7ms | ActiveRecord: 22.6ms | Allocations: 1673)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 15:56:57 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 15:56:57 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as */*
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 42ms (Views: 1.8ms | ActiveRecord: 4.7ms | Allocations: 5895)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 45ms (Views: 0.8ms | ActiveRecord: 22.7ms | Allocations: 5522)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 15:57:23 -0400
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 20.7ms | Allocations: 6916)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:21:40 -0400
+Started GET "/workouts" for ::1 at 2021-08-26 16:21:40 -0400
+Processing by UsersController#show as */*
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Filter chain halted as :authorize rendered or redirected
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 401 Unauthorized in 66ms (Views: 2.5ms | ActiveRecord: 17.3ms | Allocations: 5839)
+
+
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 60ms (Views: 2.7ms | ActiveRecord: 24.9ms | Allocations: 5651)
+
+
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:24:57 -0400
+Started GET "/workouts" for ::1 at 2021-08-26 16:24:57 -0400
+Processing by UsersController#show as */*
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Filter chain halted as :authorize rendered or redirected
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 54ms (Views: 3.8ms | ActiveRecord: 1.7ms | Allocations: 1538)
+
+
+Completed 401 Unauthorized in 46ms (Views: 5.6ms | ActiveRecord: 2.6ms | Allocations: 1454)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:28:13 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms | Allocations: 552)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 16:31:04 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:31:04 -0400
+Processing by UsersController#show as */*
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1267)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 50ms (Views: 0.5ms | ActiveRecord: 17.0ms | Allocations: 3815)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 16:31:28 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:31:28 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 21ms (Views: 5.4ms | ActiveRecord: 3.3ms | Allocations: 1644)
+
+
+  [1m[36mUser Load (23.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 34ms (Views: 0.9ms | ActiveRecord: 23.6ms | Allocations: 1768)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 16:31:50 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:31:50 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 1.0ms | ActiveRecord: 1.1ms | Allocations: 1907)
+
+
+Completed 401 Unauthorized in 12ms (Views: 0.8ms | ActiveRecord: 1.1ms | Allocations: 1446)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:41:18 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 13.6ms | Allocations: 2657)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 16:47:59 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:47:59 -0400
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 118ms (Views: 2.1ms | ActiveRecord: 19.9ms | Allocations: 5339)
+
+
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.97ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 126ms (Views: 2.6ms | ActiveRecord: 32.7ms | Allocations: 6113)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:48:08 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.0ms | Allocations: 553)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 16:49:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/workouts" for ::1 at 2021-08-26 16:49:04 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:49:04 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Filter chain halted as :authorize rendered or redirected
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 1534)
+
+
+Completed 401 Unauthorized in 13ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1656)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 16:49:08 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:49:08 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 26ms (Views: 1.4ms | ActiveRecord: 7.0ms | Allocations: 1487)
+
+
+Completed 401 Unauthorized in 40ms (Views: 0.7ms | ActiveRecord: 18.0ms | Allocations: 2288)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:49:10 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms | Allocations: 552)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 16:49:37 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:49:37 -0400
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (12.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.43ms)
+Filter chain halted as :authorize rendered or redirected
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.34ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 35ms (Views: 3.1ms | ActiveRecord: 12.8ms | Allocations: 1535)
+
+
+Completed 401 Unauthorized in 42ms (Views: 8.5ms | ActiveRecord: 8.2ms | Allocations: 1777)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:49:39 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 547)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 16:50:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 16:50:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 16:50:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/workouts" for ::1 at 2021-08-26 16:51:01 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:51:01 -0400
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 18ms (Views: 4.2ms | ActiveRecord: 4.1ms | Allocations: 1588)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 19ms (Views: 2.2ms | ActiveRecord: 5.4ms | Allocations: 1723)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:51:03 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms | Allocations: 548)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 16:51:33 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:51:33 -0400
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Processing by UsersController#show as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 1.1ms | ActiveRecord: 1.7ms | Allocations: 1395)
+
+
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 13ms (Views: 1.6ms | ActiveRecord: 5.7ms | Allocations: 1177)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 16:51:36 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:51:36 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (9.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 63ms (Views: 1.6ms | ActiveRecord: 9.4ms | Allocations: 2256)
+
+
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 56ms (Views: 3.0ms | ActiveRecord: 9.5ms | Allocations: 1561)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:51:37 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.2ms | Allocations: 547)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 16:53:17 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:53:17 -0400
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 22ms (Views: 1.1ms | ActiveRecord: 6.3ms | Allocations: 3949)
+
+
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 18ms (Views: 1.2ms | ActiveRecord: 3.9ms | Allocations: 3904)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:53:18 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 16:58:44 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:58:44 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 43ms (Views: 3.7ms | ActiveRecord: 3.5ms | Allocations: 6414)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 52ms (Views: 0.6ms | ActiveRecord: 6.8ms | Allocations: 8716)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:58:46 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 6.4ms | Allocations: 7404)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fb00d3f54c0>
+Did you mean?  try):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 16:59:42 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 16:59:42 -0400
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 18ms (Views: 0.7ms | ActiveRecord: 5.9ms | Allocations: 3979)
+
+
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 19ms (Views: 1.7ms | ActiveRecord: 2.8ms | Allocations: 3923)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 16:59:44 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 7.9ms | Allocations: 4625)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 17:02:13 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:02:13 -0400
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 21ms (Views: 1.1ms | ActiveRecord: 3.7ms | Allocations: 3845)
+
+
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 42ms (Views: 2.5ms | ActiveRecord: 1.9ms | Allocations: 3904)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:02:17 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 17:05:50 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:05:50 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.49ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 22ms (Views: 2.2ms | ActiveRecord: 2.7ms | Allocations: 5865)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 33ms (Views: 0.8ms | ActiveRecord: 16.5ms | Allocations: 5590)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:05:52 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:05:52 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 1714)
+
+
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.5ms | ActiveRecord: 4.6ms | Allocations: 1802)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:05:56 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReview Load (6.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (9.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (1.0ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mList Load (4.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mList Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mList Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mList Destroy (0.2ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (5.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWorkout Load (3.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (2.1ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.5ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.5ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (1.2ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = $1[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  [1m[36mUser Create (7.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "gym_rat"], ["password_digest", "$2a$12$1TUvmxD6s7K//dHbSSm/wu192SubN7itsHWie4SzGOZYs4HOnhTxu"], ["name", "Sandra"], ["image", "https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Serious_Buff_Red_Bull_with_Horns_Cartoon_-_Upperbody_657435830_grande.jpg?v=1518308817"], ["height", 72], ["weight", 135], ["age", 24], ["goal", "To become the strongest!"], ["created_at", "2021-08-26 21:13:55.945932"], ["updated_at", "2021-08-26 21:13:55.945932"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "love_the_gym"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "love_the_gym"], ["password_digest", "$2a$12$gLILp5hoMHrRS1Vd5vEbmuhGc709qEjXRj78NbBjYJpcr4wyLI7l6"], ["name", "Matt"], ["image", "https://jbhnews.com/wp-content/uploads/2019/12/get-ripped-fast-shredded-quickly-1.png"], ["height", 71], ["weight", 190], ["age", 27], ["goal", "To be an animal"], ["created_at", "2021-08-26 21:13:56.165986"], ["updated_at", "2021-08-26 21:13:56.165986"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "summer_body"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "name", "image", "height", "weight", "age", "goal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["username", "summer_body"], ["password_digest", "$2a$12$10oGXj6iZotCEQ0MDgBSSOKFJTMuhFB/WyZxsUfaUD6LLmJzuTCCS"], ["name", "Brittany"], ["image", "https://skinnyms.com/wp-content/uploads/2017/12/7-Insane-HIIT-Leg-Workouts-With-Weights-for-Sleek-Sexy-Legs-750x500.jpg"], ["height", 65], ["weight", 150], ["age", 26], ["goal", "I want to look my best"], ["created_at", "2021-08-26 21:13:56.379869"], ["updated_at", "2021-08-26 21:13:56.379869"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Booty Buster"], ["description", "Bust your butt for the summer!"], ["image", "https://www.mensjournal.com/wp-content/uploads/mf/_main_goblet-squat_1.jpg?quality=86&strip=all"], ["created_at", "2021-08-26 21:13:56.382614"], ["updated_at", "2021-08-26 21:13:56.382614"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ab Annihilation"], ["description", "Destroy your abs!"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMorsTC52ShQ4F_YCaC893nxDl2t6WfFW9jFX5WHenGfxfmBK9TliZqYJj5EaBkVXvdw&usqp=CAU"], ["created_at", "2021-08-26 21:13:56.385547"], ["updated_at", "2021-08-26 21:13:56.385547"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Shoulder Shredder"], ["description", "Boulder shoulders!"], ["image", "https://fitnessvolt.com/wp-content/uploads/2017/01/best-shoulder-exercise.jpg"], ["created_at", "2021-08-26 21:13:56.388694"], ["updated_at", "2021-08-26 21:13:56.388694"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Back Builder"], ["description", "Become a silverback gorilla!"], ["image", "https://www.muscleandfitness.com/wp-content/uploads/2020/07/Mr-Olympia-and-Professional-Bodybuilder-Phil-Heath-Showing-His-Back-Muscles.jpg?quality=86&strip=all"], ["created_at", "2021-08-26 21:13:56.391808"], ["updated_at", "2021-08-26 21:13:56.391808"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Calf Killer"], ["description", "You may not be able to walk tomorrow!"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRATip7PLf4exTuZAVmP_TGACCgGJ1hYSZ2e5GP_-YZtGKmxt0d5UKQA3A4wFlBWwjT-k&usqp=CAU"], ["created_at", "2021-08-26 21:13:56.395006"], ["updated_at", "2021-08-26 21:13:56.395006"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "HIIT Heaven"], ["description", "Insane cardio"], ["image", "https://lmimirror3pvr.azureedge.net/static/media/12419/3ba321af-9388-46d2-91d5-7b86a67b8c45/hiit_960x540-v2.jpg"], ["created_at", "2021-08-26 21:13:56.398097"], ["updated_at", "2021-08-26 21:13:56.398097"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mList Create (1.8ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["workout_id", 13], ["created_at", "2021-08-26 21:13:56.418865"], ["updated_at", "2021-08-26 21:13:56.418865"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mList Create (0.5ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["workout_id", 14], ["created_at", "2021-08-26 21:13:56.426260"], ["updated_at", "2021-08-26 21:13:56.426260"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mList Create (0.5ms)[0m  [1m[32mINSERT INTO "lists" ("user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["workout_id", 17], ["created_at", "2021-08-26 21:13:56.431832"], ["updated_at", "2021-08-26 21:13:56.431832"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "Kicked my butt!"], ["rating", 7], ["user_id", 7], ["workout_id", 13], ["created_at", "2021-08-26 21:13:56.439027"], ["updated_at", "2021-08-26 21:13:56.439027"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "Too difficult!"], ["rating", 4], ["user_id", 8], ["workout_id", 13], ["created_at", "2021-08-26 21:13:56.445779"], ["updated_at", "2021-08-26 21:13:56.445779"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "workout_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "What a pump!"], ["rating", 10], ["user_id", 9], ["workout_id", 13], ["created_at", "2021-08-26 21:13:56.452744"], ["updated_at", "2021-08-26 21:13:56.452744"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:16:22 -0400
+Started GET "/workouts" for ::1 at 2021-08-26 17:16:22 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 35ms (Views: 2.0ms | ActiveRecord: 2.7ms | Allocations: 5885)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 27ms (Views: 0.5ms | ActiveRecord: 6.1ms | Allocations: 5612)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:16:24 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:17:37 -0400
+Started GET "/workouts" for ::1 at 2021-08-26 17:17:37 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 33ms (Views: 3.8ms | ActiveRecord: 11.9ms | Allocations: 5865)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 111ms (Views: 0.7ms | ActiveRecord: 75.2ms | Allocations: 5590)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:17:39 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 275ms (Views: 18.3ms | ActiveRecord: 4.1ms | Allocations: 8486)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-08-26 17:21:38 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>"", "name"=>"", "user"=>{"username"=>"gym_rat", "name"=>""}}
+[31mUnpermitted parameters: :password_confirmation, :image_url, :user[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "{\"username\"=>\"gym_rat\", \"password\"=>\"1234\", \"name\"=>\"\"}"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 66ms (ActiveRecord: 7.2ms | Allocations: 5075)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/users_controller.rb:5:in `create'
+Started GET "/workouts" for ::1 at 2021-08-26 17:21:42 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:21:42 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 33ms (Views: 0.9ms | ActiveRecord: 4.3ms | Allocations: 1554)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 76ms (Views: 3.3ms | ActiveRecord: 0.9ms | Allocations: 1969)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:21:45 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:21:45 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 38ms (Views: 0.7ms | ActiveRecord: 2.8ms | Allocations: 1641)
+
+
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.44ms)
+Completed 200 OK in 80ms (Views: 5.6ms | ActiveRecord: 3.1ms | Allocations: 1853)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:21:49 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:21:49 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (27.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+  [1m[36mUser Load (54.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Completed 200 OK in 160ms (Views: 1.1ms | ActiveRecord: 27.0ms | Allocations: 1484)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 181ms (Views: 2.1ms | ActiveRecord: 54.0ms | Allocations: 2570)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:21:52 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 224ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 970)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:21:55 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 54ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 789)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:21:55 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:21:56 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 946)
+
+
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 27ms (Views: 0.5ms | ActiveRecord: 10.7ms | Allocations: 2702)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:22:03 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.7ms | ActiveRecord: 2.9ms | Allocations: 1179)
+
+
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:22:03 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.5ms | Allocations: 965)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:24:19 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:24:19 -0400
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.62ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 65ms (Views: 6.5ms | ActiveRecord: 2.9ms | Allocations: 1646)
+
+
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 71ms (Views: 1.3ms | ActiveRecord: 0.7ms | Allocations: 2259)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:24:28 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:24:28 -0400
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Processing by UsersController#show as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 1.9ms | ActiveRecord: 0.7ms | Allocations: 1598)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 1259)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:24:30 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:24:30 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 14ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 1789)
+
+
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 2.3ms | Allocations: 1866)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:24:42 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 213ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 951)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:25:07 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:25:07 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (15.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 44ms (Views: 0.6ms | ActiveRecord: 15.4ms | Allocations: 1613)
+
+
+  [1m[36mUser Load (23.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 79ms (Views: 1.4ms | ActiveRecord: 23.0ms | Allocations: 1847)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:25:19 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 267ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 967)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:31:27 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:31:27 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 82ms (Views: 0.5ms | ActiveRecord: 24.2ms | Allocations: 6578)
+
+
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 76ms (Views: 4.0ms | ActiveRecord: 24.9ms | Allocations: 5823)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:32:51 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:32:51 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Processing by UsersController#show as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 1573)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 1374)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:33:16 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:33:16 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 1.2ms | ActiveRecord: 1.6ms | Allocations: 1529)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.7ms | Allocations: 1800)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:33:24 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:33:24 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.09ms)
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Completed 200 OK in 17ms (Views: 2.0ms | ActiveRecord: 0.6ms | Allocations: 1008)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 28ms (Views: 1.8ms | ActiveRecord: 5.0ms | Allocations: 2672)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:33:29 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:33:29 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 20ms (Views: 1.6ms | ActiveRecord: 0.9ms | Allocations: 1413)
+
+
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.45ms)
+Completed 200 OK in 23ms (Views: 2.0ms | ActiveRecord: 9.8ms | Allocations: 1846)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:33:38 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.9ms)
+Completed 200 OK in 224ms (Views: 1.9ms | ActiveRecord: 3.1ms | Allocations: 969)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 17:34:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 17:34:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 17:34:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 17:34:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 17:34:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/workouts" for ::1 at 2021-08-26 17:34:44 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:34:44 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+Processing by UsersController#show as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 1.3ms | ActiveRecord: 0.9ms | Allocations: 1642)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 1268)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:34:56 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:34:56 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 56ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 1679)
+
+
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 53ms (Views: 3.3ms | ActiveRecord: 2.2ms | Allocations: 1850)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:34:58 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 228ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 955)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:35:59 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"", "password"=>"[FILTERED]", "session"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 609)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:36:00 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 223ms (Views: 0.7ms | ActiveRecord: 1.3ms | Allocations: 955)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:36:01 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 228ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 967)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:36:35 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:36:35 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 49ms (Views: 3.2ms | ActiveRecord: 2.7ms | Allocations: 1600)
+
+
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 48ms (Views: 1.2ms | ActiveRecord: 16.3ms | Allocations: 1846)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:36:55 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:36:55 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 33ms (Views: 0.4ms | ActiveRecord: 9.6ms | Allocations: 2157)
+
+
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.51ms)
+Completed 200 OK in 29ms (Views: 5.7ms | ActiveRecord: 13.5ms | Allocations: 1846)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:37:00 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 13ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 789)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:39:36 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:39:36 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 21ms (Views: 2.2ms | ActiveRecord: 2.7ms | Allocations: 5902)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 61ms (Views: 8.4ms | ActiveRecord: 19.7ms | Allocations: 13216)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:40:51 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:40:51 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 64ms (Views: 0.7ms | ActiveRecord: 1.8ms | Allocations: 2395)
+
+
+Completed 200 OK in 57ms (Views: 1.4ms | ActiveRecord: 0.5ms | Allocations: 1050)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:41:04 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:41:04 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 44ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 1674)
+
+
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 44ms (Views: 0.9ms | ActiveRecord: 11.1ms | Allocations: 1863)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:41:11 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:41:11 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 0.8ms | ActiveRecord: 5.0ms | Allocations: 1617)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 1800)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:41:14 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:41:14 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 15ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 1511)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 26ms (Views: 4.9ms | ActiveRecord: 0.8ms | Allocations: 2439)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-08-26 17:41:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/workouts" for ::1 at 2021-08-26 17:41:46 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:41:46 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 28ms (Views: 0.6ms | ActiveRecord: 1.2ms | Allocations: 1613)
+
+
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 120ms (Views: 1.0ms | ActiveRecord: 6.5ms | Allocations: 1855)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:41:52 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:41:52 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 44ms (Views: 12.4ms | ActiveRecord: 7.9ms | Allocations: 1488)
+
+
+  [1m[36mUser Load (38.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 63ms (Views: 1.3ms | ActiveRecord: 38.5ms | Allocations: 1869)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:41:54 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:41:54 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 401 Unauthorized in 36ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 2306)
+
+
+Completed 200 OK in 17ms (Views: 1.4ms | ActiveRecord: 4.4ms | Allocations: 1618)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:42:02 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:42:02 -0400
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 15ms (Views: 1.5ms | ActiveRecord: 5.5ms | Allocations: 1345)
+
+
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.89ms)
+Completed 200 OK in 19ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 1163)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:42:47 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:42:47 -0400
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 995)
+
+
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 60ms (Views: 0.7ms | ActiveRecord: 8.9ms | Allocations: 2285)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:42:52 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"", "password"=>"[FILTERED]", "session"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.8ms | Allocations: 740)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:42:53 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 241ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 961)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:42:54 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 216ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 960)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:43:17 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"i;jersbgi;aebgon", "password"=>"[FILTERED]", "session"=>{"username"=>"i;jersbgi;aebgon", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "i;jersbgi;aebgon"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 609)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:43:21 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 222ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 957)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:43:32 -0400
+Processing by WorkoutsController#index as */*
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:43:32 -0400
+Processing by UsersController#show as */*
+  [1m[36mUser Load (16.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 65ms (Views: 1.1ms | ActiveRecord: 16.2ms | Allocations: 1619)
+
+
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 45ms (Views: 1.0ms | ActiveRecord: 2.6ms | Allocations: 1851)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:44:52 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:44:52 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 25ms (Views: 2.1ms | ActiveRecord: 3.5ms | Allocations: 5888)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 64ms (Views: 9.2ms | ActiveRecord: 15.1ms | Allocations: 13202)
+
+
+Started GET "/workouts" for ::1 at 2021-08-26 17:45:01 -0400
+Started GET "/me" for 127.0.0.1 at 2021-08-26 17:45:01 -0400
+Processing by WorkoutsController#index as */*
+Processing by UsersController#show as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 0.8ms | ActiveRecord: 1.5ms | Allocations: 1301)
+
+
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 30ms (Views: 1.1ms | ActiveRecord: 16.6ms | Allocations: 1916)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-08-26 17:46:43 -0400
+Processing by SessionsController#create as JSON
+  Parameters: {"username"=>"gym_rat", "password"=>"[FILTERED]", "session"=>{"username"=>"gym_rat", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gym_rat"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 226ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1112)
+
+
